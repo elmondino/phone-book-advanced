@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    background: #4c2a4c;
+}
+.contact {
+    padding: 10px 0;
+}
+.header {
+    background: #6d3d6d;
+    padding: 20px;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+}
+.contact-list {
+    color: #dedede;
+    padding: 20px;
+}
+.filter {
+    padding-bottom: 12px;
+}
