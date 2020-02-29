@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './Calendar.css'
 
-class Home extends Component {
+class Calendar extends Component {
     state = {
         contacts: [],
         search: '',
@@ -74,4 +74,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Calendar;
