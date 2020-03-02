@@ -9,5 +9,3 @@ Please run the project by following the steps below:
 3. once all dependencies are installed; type and run: npm start
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-the app needs to allow the user to create, edit or delete a contact (in a stateless mode, not permanently)
