@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./Calendar.css";
 import AddContact from "./AddContact";
+import SortContact from "./SortContact";
 
 class Calendar extends Component {
     state = {
@@ -14,8 +15,8 @@ class Calendar extends Component {
             search: event.target.value
         });
     };
-    handleChange = e => {
-        this.setState({ sortType: e.target.value });
+    sortContact = sortType => {
+        this.setState({ sortType });
     };
     removeContact = id => {
         this.setState({
@@ -71,13 +72,7 @@ class Calendar extends Component {
                         <label htmlFor="filter">Filter by name: </label>
                         <input type="text" id="filter" value={this.state.search} onChange={this.updateSearch} />
                     </div>
-                    <div className="sort">
-                        <label htmlFor="orderBy">Sort by name: </label>
-                        <select value={this.state.value} id="orderBy" onChange={this.handleChange}>
-                            <option value="asc">Ascending</option>
-                            <option value="desc">Descending</option>
-                        </select>
-                    </div>
+                    <SortContact sortContact={this.sortContact} />
                     <AddContact addContact={this.addContact} />
                 </div>
                 <div className="contact-list">{contactsList}</div>
